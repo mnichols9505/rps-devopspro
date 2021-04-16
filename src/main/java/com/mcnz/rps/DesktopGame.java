@@ -8,7 +8,7 @@ public class DesktopGame {
 	public static void main(String[] args) {
 
 		String prompt = "Will it be rock, paper or scissors?";
-		System.out.println("heeeelllloooooo");
+		System.out.println("hi");
 		Score score = new Score();
 		java.util.Vector<GameSummary> history = new java.util.Vector<GameSummary>();
 
@@ -16,7 +16,7 @@ public class DesktopGame {
 			String result = "error";
 			String input = JOptionPane.showInputDialog(prompt);
 			if (input.equals(Gesture.scissors.toString())) {
-				result = "lose";
+				result = "win";
 				score.increaseLosses();
 			}
 			if (input.equals(Gesture.paper.toString())) {
@@ -24,7 +24,7 @@ public class DesktopGame {
 				score.increaseWins();
 			}
 			if (input.equals(Gesture.rock.toString())) {
-				result = "tie";
+				result = "win";
 				score.increaseTies();
 			}
 			if (input.equalsIgnoreCase("quit")) {
