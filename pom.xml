@@ -48,12 +48,10 @@
           <version>3.0.0</version>
         </plugin>
         <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings             .html#Plugin_bindings_for_war_packaging -->
-        <!--
           <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
-        -->
         <plugin>
 		    <groupId>com.spotify</groupId>
 		    <artifactId>dockerfile-maven-plugin</artifactId>
