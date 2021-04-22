@@ -11,13 +11,6 @@
   <name>roshambo web application</name>
   <url>http://www.mcnz.com</url>
 
-  <properties>
-    <!--<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target> -->
-    <docker.image.prefix>rps</docker.image.prefix>
-  </properties>
-
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -51,14 +44,6 @@
           <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
-        </plugin>
-        <plugin>
-		    <groupId>com.spotify</groupId>
-		    <artifactId>dockerfile-maven-plugin</artifactId>
-		    <version>1.3.6</version>
-		    <configuration>
-			    <repository>${docker.image.prefix}/${project.artifactId}</repository>
-		    </configuration>
 		    </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
