@@ -1,3 +1,4 @@
+  
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/             2001/XMLSchema-instance"
@@ -10,6 +11,12 @@
 
   <name>roshambo web application</name>
   <url>http://www.mcnz.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -29,11 +36,7 @@
           <artifactId>tomcat7-maven-plugin</artifactId>
           <version>2.2</version>
           <configuration>
-<<<<<<< HEAD
-          <url>http://10.0.113.10:6464/manager/text</url>
-=======
-          <url>http://10.0.113.20:8080/manager/text</url>
->>>>>>> parent of b8f8ea0 (Update pom.xml)
+          <url>http://10.0.113.10:8080/manager/text</url>
           <server>tomcatServer</server>
           <path>/rps</path>
           <username>tomcat</username>
@@ -45,13 +48,13 @@
           <version>3.0.0</version>
         </plugin>
         <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings             .html#Plugin_bindings_for_war_packaging -->
-          <plugin>
+        <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
-		    </plugin>
+        </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.6.0</version>
+          <version>3.7.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
