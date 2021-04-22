@@ -29,7 +29,11 @@
           <artifactId>tomcat7-maven-plugin</artifactId>
           <version>2.2</version>
           <configuration>
+<<<<<<< HEAD
           <url>http://10.0.113.10:6464/manager/text</url>
+=======
+          <url>http://10.0.113.20:8080/manager/text</url>
+>>>>>>> parent of b8f8ea0 (Update pom.xml)
           <server>tomcatServer</server>
           <path>/rps</path>
           <username>tomcat</username>
