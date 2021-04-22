@@ -31,20 +31,18 @@
     <finalName>roshambo</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defau             lts (may be moved to parent pom) -->
       <plugins>
-      <!--
       <plugin>
           <groupId>org.apache.tomcat.maven</groupId>
           <artifactId>tomcat7-maven-plugin</artifactId>
           <version>2.2</version>
           <configuration>
-          <url>http://10.0.113.10:8080/manager/text</url>
+          <url>http://10.0.113.10:6464/manager/text</url>
           <server>tomcatServer</server>
           <path>/rps</path>
           <username>tomcat</username>
           <password>pass</password>
           </configuration>
       </plugin>
-      -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.0.0</version>
